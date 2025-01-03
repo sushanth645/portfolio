@@ -65,7 +65,7 @@ const Work = () => {
               <p className="text-white/60">{projects[0].description}</p>
 
               {/* Stack */}
-              <ul className="flex gap-4">
+              <ul className="flex md:gap-4">
                 {projects[0].stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
@@ -145,7 +145,7 @@ const Work = () => {
               <p className="text-white/60">{projects[1].description}</p>
 
               {/* Stack */}
-              <ul className="flex gap-4">
+              <ul className="flex md:gap-4">
                 {projects[1].stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
