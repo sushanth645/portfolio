@@ -43,9 +43,9 @@ const Contact = ()=>{
      initial={{ opacity: 0 }}
       animate={{ opacity: 1,transition: {delay:2.4 , duration:0.4,ease:'easeIn'}
        }} 
-       className="py-6"
+       className="py-6 overflow-y-auto h-[calc(100vh-80px)]"
        >
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4 sm:px-6">
          <div className="flex flex-col xl:flex-row gap-[30px]">
             {/* form */}
             <div className="xl:w-[54%] order-2 xl:order-none">

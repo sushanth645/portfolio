@@ -128,9 +128,9 @@ const Resume = ()=>{
         opacity:1,
         transition: {delay:2.4,duration: 0.4,ease:"easeIn"},
      }}
-     className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+     className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 overflow-y-auto h-[calc(100vh-80px)]"
      >
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4 sm:px-6">
             <Tabs
              defaultValue="education" 
              className="flex fex-col xl:flex-row gap-[60px]"
@@ -151,7 +151,7 @@ const Resume = ()=>{
                       <h3 className="text-4xl font-bold">{education.title}</h3>
                       <p className="max-w-[600pxx] text-white/60 mx-auto xl:mx-0">{education.Description}</p>
                       <ScrollArea className="h-[400px]">
-                        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-[30px]">
                             {education.items.map((item,index)=>{
                                return(
                                <li 

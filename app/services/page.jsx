@@ -33,8 +33,8 @@ const services = [
 import {motion} from "framer-motion";
 const Services = ()=>{
     return (
-     <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
-       <div className="container mx-auto">
+     <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0 overflow-y-auto h-[calc(100vh-80px)]">
+       <div className="container mx-auto px-4 sm:px-6">
         <motion.div
         initial={{opacity:0}}
         animate={{
