@@ -22,7 +22,9 @@ export default function RootLayout({ children }) {
       <body className={jetbrainsMono.variable}>
         <Header />
         <StairTransition />
+        <main className="min-h-screen pt-20">
         <PageTransition>{children}</PageTransition>
+        </main>
         </body>
     </html>
   );

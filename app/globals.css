@@ -28,7 +28,10 @@ body {
 
 @layer base {
   body {
-   @apply font-primary bg-primary text-white leading-loose;
+   @apply font-primary bg-primary text-white leading-loose min-h-screen relative overflow-x-hidden;
+  }
+  main {
+    @apply pt-20; /* Adds padding for header */
   }
   .h1 {
     @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
