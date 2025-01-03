@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 const jetbrainsMono = JetBrains_Mono({ 
   subsets: ["latin"],
   weight: ["100","200","300","400","500","600","700","800"],
@@ -22,9 +22,7 @@ export default function RootLayout({ children }) {
       <body className={jetbrainsMono.variable}>
         <Header />
         <StairTransition />
-        <main className="min-h-screen pt-20">
         <PageTransition>{children}</PageTransition>
-        </main>
         </body>
     </html>
   );
