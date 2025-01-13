@@ -21,16 +21,11 @@ const info = [
  {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "(+91) 630035XXXX",
- },
- {
- icon:<FaEnvelope />,
-title: "Email",
-description:"sushanthlakkoju66@gmail.com",
+    description: "630035XXXX",
  },
  {
     icon: <FaMapMarkerAlt />,
-    title: "Adress",
+    title: "Address",
     description: "Dakkini street,Vizianagaram,AP",
  },
 ];
@@ -81,7 +76,7 @@ const Contact = ()=>{
                             </div>
                             <div className="flex-1">
                                 <p className="text-white/60">{item.title}</p>
-                                <h3 className="text-xl max-w-[54%]">{item.description}</h3>
+                                <h3 className="text-xl">{item.description}</h3>
                             </div>
                         </li>
                     })}

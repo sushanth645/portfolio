@@ -16,10 +16,7 @@ const projects = [
     description:
       "Pixels is a dynamic social media platform enabling user authentication, profile management, and content sharing. Built with modern web technologies, it highlights my full-stack development skills and focus on creating user-friendly, scalable solutions",
     stack: [
-      { name: "Mongodb" },
-      { name: "Express.js" },
-      { name: "React.js" },
-      { name: "Node.js" },
+      { name: "MERN" },
     ],
     image: "/assets/work/mern.png",
     live: "",
@@ -65,7 +62,7 @@ const Work = () => {
               <p className="text-white/60">{projects[0].description}</p>
 
               {/* Stack */}
-              <ul className="flex md:gap-4">
+              <ul className="flex gap-4">
                 {projects[0].stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
@@ -145,7 +142,7 @@ const Work = () => {
               <p className="text-white/60">{projects[1].description}</p>
 
               {/* Stack */}
-              <ul className="flex md:gap-4">
+              <ul className="flex gap-4">
                 {projects[1].stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
