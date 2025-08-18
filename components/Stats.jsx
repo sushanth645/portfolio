@@ -2,7 +2,7 @@
 import CountUp from "react-countup";
 const stats=[
   {
-   num:200,
+   num:500,
    text: "Dsa Problems solved",
   },
   {
