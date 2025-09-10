@@ -12,7 +12,7 @@ const projects = [
   {
     num: "01",
     category: "full stack",
-    title: "project2",
+    title: "project1",
     description:
       "Pixels is a dynamic social media platform enabling user authentication, profile management, and content sharing. Built with modern web technologies, it highlights my full-stack development skills and focus on creating user-friendly, scalable solutions",
     stack: [
@@ -24,8 +24,19 @@ const projects = [
   },
   {
     num: "02",
+    category: "full stack",
+    title: "project2",
+    description:
+      "Inceptify is a full-stack productivity platform designed for seamless task and document management. Built with Next.js and TypeScript, it supports deep hierarchical organization with over 20+ nested levels, customizable icons, cover images, and shareable URLs. Featuring secure authentication via Clerk and state management with Zustand, it highlights my ability to build scalable, user-friendly applications with modern web technologies.",
+    stack: [{ name: "Next.js" }, { name: "Typescript" }],
+    image: "/assets/work/inceptify.png",
+    live: "https://inceptifyy.vercel.app/",
+    github: "https://github.com/sushanth645/Inceptify-planner",
+  },
+    {
+    num: "03",
     category: "frontend",
-    title: "project1",
+    title: "project3",
     description:
       "Developed a responsive Amazon clone using HTML and CSS, replicating the platform's user interface and design. This project showcases my attention to detail, proficiency in web design, and ability to create visually appealing layouts aligned with modern UI/UX standards.",
     stack: [{ name: "Html" }, { name: "css" }],
@@ -189,6 +200,86 @@ const Work = () => {
                         fill
                         className="object-cover"
                         alt={projects[1].title}
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="h-[50px]"></div>
+      <div className="border border-white/20 w-[90%] mx-auto"></div>
+      <div className="h-[100px]"></div>
+
+      <div className="container mx-auto">
+        <div className="flex flex-col xl:flex-row xl:gap-[30px]">
+          {/* Left side: Project Details */}
+          <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
+            <div className="flex flex-col gap-[30px] h-[50%]">
+              {/* Project number */}
+              <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+                {projects[2].num}
+              </div>
+
+              {/* Project category */}
+              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+                {projects[2].category} project
+              </h2>
+
+              {/* Project description */}
+              <p className="text-white/60">{projects[1].description}</p>
+
+              {/* Stack */}
+              <ul className="flex gap-4">
+                {projects[2].stack.map((item, index) => {
+                  return (
+                    <li key={index} className="text-xl text-accent">
+                      {item.name}
+                      {index !== projects[1].stack.length - 1 && ","}
+                    </li>
+                  );
+                })}
+              </ul>
+
+              {/* Border */}
+              <div className="border border-white/20"></div>
+
+              {/* GitHub Button */}
+              <div className="flex items-center gap-4">
+                <Link href={projects[2].github}>
+                  <TooltipProvider delayDuration={100}>
+                    <Tooltip>
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Github repository</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Right side: Swiper */}
+          <div className="w-full xl:w-[50%]">
+            <div
+              className="xl:h-[520px] mb-12"
+             // Trigger project change on slide change
+            >
+                <SwiperSlide  className="w-full">
+                  <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                    {/* Image */}
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={projects[2].image}
+                        fill
+                        className="object-cover"
+                        alt={projects[2].title}
                       />
                     </div>
                   </div>
