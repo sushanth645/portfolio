@@ -30,10 +30,10 @@ const projects = [
       "Inceptify is a full-stack productivity platform designed for seamless task and document management. Built with Next.js and TypeScript, it supports deep hierarchical organization with over 20+ nested levels, customizable icons, cover images, and shareable URLs. Featuring secure authentication via Clerk and state management with Zustand, it highlights my ability to build scalable, user-friendly applications with modern web technologies.",
     stack: [{ name: "Next.js" }, { name: "Typescript" }],
     image: "/assets/work/inceptify.png",
-    live: "https://inceptifyy.vercel.app/",
+    live: "",
     github: "https://github.com/sushanth645/Inceptify-planner",
   },
-    {
+  {
     num: "03",
     category: "frontend",
     title: "project3",
